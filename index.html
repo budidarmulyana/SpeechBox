@@ -4,19 +4,32 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Speech Box - A Free web base Text-to-Speech service</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Speech Box - Text to Speech</title>
+    <link rel="stylesheet" href="style-tts.css">
 </head>
 <body>
 	<div id="full">
     <div id="left_border"></div>
     <div id="myDiv">
-    <div id="logo" title="Logo Speech Box"><img src="logo-tts.png"></div>
+    <!-- Header -->
+        <!-- Start Nav Top-->
+        <nav class="nav-primary">
+          <ul>
+              <li>
+                  <a href="stt.html" title="Home">Speech-to-Text</a>
+              </li>
+              <li>
+                  <a href="contact.html" title="Contact us">Contact</a>
+              </li>
+          </ul>
+      </nav>
+      <!-- End Nav Top-->
+    <p id="logo" title="Logo Speech Box"><img src="logo-tts.png"></p>
+    <h1>Speech Box <span class="judul">Text to Speech</span></h1>
+    <p>A Free web base Text-to-Speech service</p>
   
-      <h1>Speech Box</h1>
-      <p>A Free web base Text-to-Speech service</p>
-  
-      <form>
+  <!-- Start Main -->
+        <form>
         <textarea name="txt" class="txt cols="200" rows="4"m placeholder="Type text here or copy and paste..." accesskey="1"></textarea>
         <div>
           <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate" title="use the arrows to adjust the speed of voice" accesskey="2">
@@ -28,9 +41,6 @@
           <div class="pitch-value">1</div>
           <div class="clearfix"></div>
         </div>
-        <select>
-      
-        </select>
         <div class="controls">
           <button id="play" type="submit" accesskey="4">Play</button>
         </div>
@@ -44,6 +54,6 @@
   <div id="footer">
   Yayasan Mitra Netra <br> Jl. Gunung Balong 2 No. 58 Lebak Bulus, Jakarta Selatan 12440
   </div>
-  <script src="speech.js"></script>
+  <script src="tts.js"></script>
 </body>
 </html>
